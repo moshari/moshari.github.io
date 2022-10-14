@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+@import url(/assets/css/header.css);
+@import url(/assets/css/welcome-secion.css);
+@import url(/assets/css/content.css);
+@import url(/assets/css/footer.css);
+
+:root {
+    --header-bg-color: rgb(54 54 54 / 98%);
+    --footer-bg-color: rgb(54 54 54 / 98%);
+    --social-be-color: rgb(29 28 28 / 98%);
+    --welcome-be-color: #f9f9f9;
+    --main-text-color: wheat;
+    --main-text-hover-color: orange;
+    --footer-list-hover-bg-color: rgb(65, 66, 66);
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    /*border: 2px solid saddlebrown;*/
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 74px 620px minmax(300px, 1fr) 80px 40px;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        "wel wel wel wel wel wel wel wel wel wel wel wel"
+        "main main main main main main main main main main main main"
+        "so so so so so so so so so so so so"
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
+
+    padding: 0;
+}
+
+.grid-post {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 74px minmax(300px, 1fr) 80px 40px;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        "main main main main main main main main main main main main"
+        "so so so so so so so so so so so so"
+        "ft ft ft ft ft ft ft ft ft ft ft ft";
+
+    padding: 0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .grid {
+        grid-template-rows: 54px 620px minmax(300px, 1fr) 80px 40px;
+       
+    }
+}

@@ -1,0 +1,65 @@
+/* Welcome Section */
+.welcome-section {
+    grid-area: wel;
+    background-color: var(--welcome-be-color);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    background-image: url(/assets/img/welcome2.webp);
+
+}
+
+.welcome-words {
+
+    width: 730px;
+    height: 347px;
+    background-color: var(--header-bg-color);
+}
+
+.welcome-words h1 {
+    color: rgb(255, 197, 91);
+    text-align: center;
+    font-size: 35px;
+    border-bottom: solid 7px silver;
+    width: 368px;
+    padding-bottom: 7px;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.welcome-words p {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 23px;
+    letter-spacing: 0.04em;
+    padding: 6px 40px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .welcome-words {
+
+        width: 100%;
+        height: 400px;
+        background-color: var(--header-bg-color);
+    }
+
+    .welcome-words h1 {
+        text-align: center;
+        font-size: 25px;
+        border-bottom: solid 7px silver;
+        width: 100%;
+        padding-bottom: 7px;
+        margin: auto;
+        margin-top: 24px;
+    }
+
+    .welcome-words p {
+        color: var(--main-text-color);
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+        padding: 6px 40px;
+    }
+}
